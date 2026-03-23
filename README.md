@@ -27,5 +27,5 @@ Gib dem Lesezeichen einen Namen, zum Beispiel Payback Coupon Aktivator.
 Kopiere den dafür vorgesehenen Code-Block komplett und füge ihn in das Feld URL (oder Adresse) ein:
 Logge dich bei Payback ein, gehe auf die Coupon-Seite und klicke auf dein neues Lesezeichen. Die Seite lädt danach neu. Klicke bei Bedarf einfach noch einmal darauf. Erfahrungsgemäß muss dies 2-3x wiederholt werden, damit alle Coupons aktiviert sind.
 
-⚠️ Sicherheitshinweis
+## ⚠️ Sicherheitshinweis
 Dieses Skript agiert ausschließlich lokal in deinem Browser. Es liest keine Passwörter aus und sendet keine Daten an Dritte. Die Nutzung erfolgt dennoch auf eigene Gefahr.
