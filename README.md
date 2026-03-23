@@ -1,6 +1,6 @@
 Payback Coupon Auto-Activator
-Dieses Skript automatisiert das Einlösen von Payback-Coupons. Anstatt jeden Coupon mühsam einzeln anzuklicken, sucht das Skript alle verfügbaren Coupons auf der Seite, aktiviert sie gleichzeitig und lädt die Seite automatisch neu, um eventuell nachgerückte Coupons ebenfalls zu erfassen (insgesamt 3 Durchläufe).
 
+Dieses Skript automatisiert das Einlösen von Payback-Coupons. Anstatt jeden Coupon mühsam einzeln anzuklicken, sucht das Skript alle verfügbaren Coupons auf der Seite, aktiviert sie gleichzeitig und lädt die Seite automatisch neu, um eventuell nachgerückte Coupons ebenfalls zu erfassen (insgesamt 3 Durchläufe).
 Es gibt zwei Möglichkeiten, dieses Skript zu nutzen: Automatisiert über die Browser-Erweiterung Tampermonkey oder manuell als Lesezeichen (Bookmarklet).
 
 Methode 1: Installation mit Tampermonkey (Empfohlen)
