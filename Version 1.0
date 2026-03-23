@@ -1,0 +1,50 @@
+// ==UserScript==
+// @name         Payback Auto-Activator (Fast All-at-Once Mode)
+// @namespace    http://tampermonkey.net/
+// @version      2026-03-23
+// @description  Aktiviert alle Coupons sofort gleichzeitig und lädt 3x neu
+// @author       You
+// @match        https://www.payback.de/coupons*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=payback.de
+// @grant        none
+// ==/UserScript==
+
+(async function() {
+    'use strict';
+
+    // Wie oft soll das Ganze passieren?
+    const MAX_RUNS = 3;
+    
+    // Zähler aus dem Zwischenspeicher holen (startet bei 0)
+    let currentRun = parseInt(sessionStorage.getItem('pb_fast_run_count')) || 0;
+
+    // Wenn 3 Durchläufe erreicht sind, aufhören
+    if (currentRun >= MAX_RUNS) {
+        sessionStorage.removeItem('pb_fast_run_count');
+        alert("Fertig! 3 Durchläufe sind komplett.");
+        return;
+    }
+
+    // 1. Kurz warten, damit das Grundgerüst der Seite da ist
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
+    // 2. Alle Coupons auf der Seite suchen
+    const buttons = document.querySelectorAll('button[data-testid$="-not_activated"]');
+    
+    if (buttons.length > 0) {
+        console.log(`Durchlauf ${currentRun + 1}: ${buttons.length} Coupons gefunden. Klicke alle gleichzeitig!`);
+        
+        // 3. ALLE auf einmal klicken (deine ursprüngliche Logik)
+        buttons.forEach(btn => btn.click());
+    } else {
+        console.log(`Durchlauf ${currentRun + 1}: Keine Coupons gefunden.`);
+    }
+
+    // 4. Zähler für den nächsten Durchlauf speichern
+    currentRun++;
+    sessionStorage.setItem('pb_fast_run_count', currentRun);
+
+    // 5. Kurz warten, bis der Server alle Klicks verarbeitet hat, dann neu laden (wie in deinem 1. Skript)
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    location.reload();
+})();
