@@ -4,7 +4,7 @@ Dieses Skript automatisiert das Einlösen von Payback-Coupons. Anstatt jeden Cou
 
 Es gibt zwei Möglichkeiten, dieses Skript zu nutzen: Automatisiert über die Browser-Erweiterung Tampermonkey oder manuell als Lesezeichen (Bookmarklet).
 
-Methode 1: Installation mit Tampermonkey (Empfohlen)
+## Methode 1: Installation mit Tampermonkey (Empfohlen)
 
 Mit Tampermonkey läuft das Skript vollautomatisch und übersteht auch das Neuladen der Seite.
 
@@ -17,7 +17,7 @@ Rufe die Payback-Coupon-Seite auf. Nun solltest du an der Tampermonkey-Erweiteru
 Das Skript startet sofort von alleine, aktiviert alle Coupons, wartet 2 Sekunden und lädt die Seite bis zu 3-mal neu.
 Wenn du nicht möchtest, dass die Coupons automatisch aktiviert werden, deaktiviere das Skript einfach über das Menü der Tampermonkey-Erweiterung.
 
-Methode 2: Als Lesezeichen / Bookmarklet (Ohne Erweiterung)
+## Methode 2: Als Lesezeichen / Bookmarklet (Ohne Erweiterung)
 
 Wer keine zusätzliche Browser-Erweiterung installieren möchte, kann eine leicht abgewandelte Version des Codes als Lesezeichen speichern.
 
