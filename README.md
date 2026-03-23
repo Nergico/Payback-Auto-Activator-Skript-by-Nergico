@@ -1,13 +1,9 @@
 ## Payback Coupon Auto-Activator
-
-Dieses Skript automatisiert das Einlösen von Payback-Coupons. Anstatt jeden Coupon mühsam einzeln anzuklicken, sucht das Skript alle verfügbaren Coupons auf der Seite, aktiviert sie gleichzeitig und lädt die Seite automatisch neu, um eventuell nachgerückte Coupons ebenfalls zu erfassen (insgesamt 3 Durchläufe).
-
+Dieses Skript automatisiert das Einlösen von Payback-Coupons. Anstatt jeden Coupon mühsam einzeln anzuklicken, sucht das Skript alle verfügbaren Coupons auf der Seite, aktiviert sie gleichzeitig und lädt die Seite automatisch neu, um eventuell nachgerückte Coupons ebenfalls zu erfassen (insgesamt 3 Durchläufe).  
 Es gibt zwei Möglichkeiten, dieses Skript zu nutzen: Automatisiert über die Browser-Erweiterung Tampermonkey oder manuell als Lesezeichen (Bookmarklet).
 
 ## Methode 1: Installation mit Tampermonkey (Empfohlen)
-
-Mit Tampermonkey läuft das Skript vollautomatisch und übersteht auch das Neuladen der Seite.
-
+Mit Tampermonkey läuft das Skript vollautomatisch und übersteht auch das Neuladen der Seite.  
 Lade dir die kostenlose Browser-Erweiterung Tampermonkey herunter (verfügbar für Chrome, Firefox, Edge, Safari).  
 Stelle sicher, dass Tampermonkey die Berechtigung hat, Skripte auszuführen. Gehe dazu – je nach Browser – in die Eigenschaften/Details deiner Tampermonkey-Erweiterung und aktiviere dort "Benutzerskripts zulassen" (oder eine ähnliche Formulierung).  
 Gehe auf GitHub unter "Releases" und kopiere dir das Tampermonkey-Skript.  
@@ -18,14 +14,17 @@ Das Skript startet sofort von alleine, aktiviert alle Coupons, wartet 2 Sekunden
 Wenn du nicht möchtest, dass die Coupons automatisch aktiviert werden, deaktiviere das Skript einfach über das Menü der Tampermonkey-Erweiterung.
 
 ## Methode 2: Als Lesezeichen / Bookmarklet (Ohne Erweiterung)
+Wer keine zusätzliche Browser-Erweiterung installieren möchte, kann eine leicht abgewandelte Version des Codes als Lesezeichen speichern.  
 
-Wer keine zusätzliche Browser-Erweiterung installieren möchte, kann eine leicht abgewandelte Version des Codes als Lesezeichen speichern.
+Hier habe ich 2 verschiedene Versionen:  
+Version 1 aktiviert sofort alle Coupons der aktuellen Seite. Da hier die Seite nicht automatisch neu geladen wird, wie bei dem Tampermonkey-Skript, muss die Seite manuell mehrmals (2-3x) neu geladen und dann das Skript ausgeführt werden.  
+Version 2 aktiviert jeden Coupon einzeln. Das dauert länger, muss aber nur einmal ausgeführt werden.
 
-Wichtiger Hinweis zu dieser Methode: Da ein Lesezeichen nach einem Seiten-Reload aus dem Arbeitsspeicher des Browsers gelöscht wird, funktioniert die automatische Wiederholung hier nicht. Du musst das Lesezeichen nach dem Neuladen der Seite jedes Mal manuell neu anklicken.  
+Je nachdem, welche Methode bevorzugt wird, kann das jeweilige Skript benutzt werden.  
 Mache einen Rechtsklick auf deine Lesezeichenleiste im Browser und wähle Lesezeichen hinzufügen (oder Seite hinzufügen).  
 Gib dem Lesezeichen einen Namen, zum Beispiel Payback Coupon Aktivator.  
-Kopiere den dafür vorgesehenen Code-Block komplett und füge ihn in das Feld URL (oder Adresse) ein:  
-Logge dich bei Payback ein, gehe auf die Coupon-Seite und klicke auf dein neues Lesezeichen. Die Seite lädt danach neu. Klicke bei Bedarf einfach noch einmal darauf. Erfahrungsgemäß muss dies 2-3x wiederholt werden, damit alle Coupons aktiviert sind.
+Kopiere den dafür vorgesehenen Code-Block komplett und füge ihn in das Feld URL (oder Adresse) ein.  
+Logge dich bei Payback ein, gehe auf die Coupon-Seite und klicke auf dein neues Lesezeichen. Nun siehst du, wie die Coupons automatisch aktiviert werden.
 
 ## ⚠️ Sicherheitshinweis
 Dieses Skript agiert ausschließlich lokal in deinem Browser. Es liest keine Passwörter aus und sendet keine Daten an Dritte. Die Nutzung erfolgt dennoch auf eigene Gefahr.
