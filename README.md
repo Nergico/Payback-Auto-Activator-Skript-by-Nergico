@@ -28,3 +28,5 @@ Logge dich bei Payback ein, gehe auf die Coupon-Seite und klicke auf dein neues 
 
 ## ⚠️ Sicherheitshinweis
 Dieses Skript agiert ausschließlich lokal in deinem Browser. Es liest keine Passwörter aus und sendet keine Daten an Dritte. Die Nutzung erfolgt dennoch auf eigene Gefahr.
+
+Wenn euch das Skript gefällt, würde ich mich als Anerkennung sehr über sein Stern freuen.
